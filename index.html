@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#172b49">
+<meta name="description" content="Un regalo un poquito tarde. Una colección de nuestros mejores recuerdos para celebrar a Yonis.">
+<title>Para Yonis · Un regalo lleno de recuerdos</title>
+<style>
+:root{--ink:#172b49;--paper:#fffaf0;--muted:#a9b7ca;--accent:#ff815f;--yellow:#f7d87c;--line:#ffffff25;--frame-width:min(390px,calc(100vw - 44px),calc(54svh * .75 + 28px))}
+*{box-sizing:border-box} [hidden]{display:none!important} html{color-scheme:dark}body{margin:0;background:var(--ink);color:var(--paper);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100svh;background-image:radial-gradient(ellipse at 85% 20%,#34527170,transparent 55%)}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}button:disabled{opacity:.4;cursor:default}a{color:inherit}button:focus-visible,a:focus-visible{outline:3px solid var(--yellow);outline-offset:5px}button{touch-action:manipulation}h1,h2,p{margin:0}h1,h2,.serif{font-family:Georgia,"Times New Roman",serif;font-weight:400}button svg,a svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.site-top{max-width:1320px;margin:auto;padding:24px 40px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:12px;letter-spacing:.18em;text-transform:uppercase}.brand{display:flex;align-items:center;gap:12px}.brand-symbol{font-size:27px;color:var(--accent);line-height:1}.edition{color:var(--muted)}.welcome{min-height:calc(100svh - 86px);display:flex;align-items:center;justify-content:center;text-align:center;padding:20px 20px 45px;position:relative;overflow:hidden}.welcome-content{width:100%;max-width:630px}.eyebrow{text-transform:uppercase;letter-spacing:.21em;font-size:12px;color:var(--yellow);margin-bottom:13px}.welcome h1{font-size:clamp(42px,6vw,68px);line-height:1.08;letter-spacing:-.045em}.welcome h1 em{color:var(--accent);font-weight:400}.welcome-sub{margin:18px 0 0;color:#c9d2de;font-size:16px}.gift-scene{position:relative;width:300px;height:260px;margin:27px auto 20px;perspective:800px;isolation:isolate}.gift-shadow{position:absolute;width:235px;height:30px;border-radius:50%;background:#07182a60;filter:blur(10px);left:34px;bottom:4px}.gift-box{position:absolute;width:220px;height:160px;left:40px;bottom:18px;background:linear-gradient(115deg,#fa8669,#ec6b50);border-radius:4px 4px 12px 12px;box-shadow:inset -18px 0 #c7523e30,0 22px 50px #07182a40;z-index:3}.gift-box:before{content:"";position:absolute;left:91px;width:38px;height:100%;background:#f9d98d;box-shadow:inset -6px 0 #d6ad6226}.gift-box:after{content:"";position:absolute;left:22px;top:65px;width:50px;height:28px;background:var(--paper);transform:rotate(-12deg);border-radius:2px;box-shadow:0 2px 6px #0002}.gift-lid{position:absolute;bottom:170px;left:28px;width:244px;height:40px;background:#ff9477;box-shadow:0 7px 9px #84362328,inset -12px 0 #ec7258;border-radius:5px;z-index:4;transform-origin:80% 50%}.gift-lid:after{content:"";position:absolute;left:103px;top:0;width:38px;height:40px;background:#ffe2a2}.bow{position:absolute;left:103px;bottom:205px;width:95px;height:51px;z-index:5;transform-origin:center bottom}.bow:before,.bow:after{content:"";position:absolute;width:51px;height:39px;border:11px solid #f9d98d;bottom:0}.bow:before{left:0;border-radius:70% 80% 0 70%;transform:rotate(14deg)}.bow:after{right:0;border-radius:80% 70% 70% 0;transform:rotate(-14deg)}.spark{position:absolute;color:var(--yellow);font-size:30px;line-height:1}.spark.one{left:3px;top:39px;transform:rotate(-15deg)}.spark.two{right:0;top:96px;font-size:20px}.spark.three{right:48px;top:5px;color:var(--accent);font-size:15px}.mini-frame{position:absolute;left:77px;bottom:63px;width:146px;height:190px;background:var(--paper);padding:8px 8px 26px;box-shadow:0 12px 30px #0004;transform:translateY(55px) scale(.7) rotate(-8deg);opacity:0;z-index:2;color:var(--ink);display:flex;align-items:center;justify-content:center;overflow:hidden}.mini-frame img{width:100%;height:100%;object-fit:contain;background:#dfe4e8}.mini-frame span{position:absolute;bottom:4px;font:12px Georgia,serif}.mini-video{font-size:34px!important;position:static!important}.primary{border:0;border-radius:999px;padding:14px 26px;background:var(--paper);color:var(--ink);display:inline-flex;align-items:center;justify-content:center;gap:12px;font-weight:650;min-height:50px;box-shadow:0 5px 20px #07182a20;transition:transform .2s,background .2s}.primary:hover{transform:translateY(-2px);background:#ffe6b7}.welcome-note{margin-top:15px;font-size:13px;color:var(--muted)}.opening .gift-box{animation:box-open 2.5s both}.opening .gift-lid{animation:lid-open 2.5s both}.opening .bow{animation:bow-open 2.5s both}.opening .mini-frame{animation:frame-open 2.5s both}.opening .spark{opacity:0;transition:opacity .5s}.opening #openGift{opacity:0;transition:opacity .25s}.opening .welcome-note{opacity:0}.confetti{position:fixed;width:8px;height:13px;left:50%;top:48%;z-index:20;pointer-events:none;animation:confetti 1.8s ease-out forwards}.gallery{max-width:1120px;margin:0 auto;padding:30px 40px 24px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;min-height:calc(100svh - 150px)}.intro{max-width:450px}.intro h2{font-size:clamp(40px,4.5vw,63px);line-height:1.06;letter-spacing:-.045em;outline-offset:10px}.intro h2 .accent{color:var(--accent)}.intro h2 .emoji{font-size:.45em;white-space:nowrap}.dates{display:flex;align-items:center;gap:17px;margin:27px 0 24px;font-size:15px;font-weight:650;letter-spacing:.06em}.old-date{color:#b0bdcf;text-decoration-thickness:2px;text-decoration-color:var(--accent);transform:rotate(-7deg)}.date-arrow{width:46px;color:var(--accent);font-size:31px;font-family:Georgia,serif;line-height:1}.new-date{border:1px solid #f7d87c80;border-radius:50%;padding:11px 17px;color:var(--yellow);transform:rotate(5deg)}.quote{font-family:Georgia,serif;font-size:25px;line-height:1.45;max-width:350px}.apology{color:#b5c2d2;font-size:14px;margin-top:19px;max-width:320px}.intro-bottom{margin-top:37px;padding-top:19px;border-top:1px solid var(--line);font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}.viewer{display:flex;flex-direction:column;align-items:center;min-width:0}.polaroid{background:var(--paper);padding:14px 14px 13px;color:var(--ink);width:var(--frame-width);box-shadow:0 20px 65px #06182e70,0 3px 10px #06182e40;position:relative;border-radius:3px;transform:rotate(1.3deg);margin:0 0 23px}.polaroid:before{content:"";position:absolute;left:calc(50% - 40px);top:-12px;width:80px;height:25px;background:#f4d38bb5;transform:rotate(-5deg);z-index:2}.media-stage{aspect-ratio:3/4;position:relative;background:#e4e6e4;overflow:hidden;touch-action:pan-y;display:grid;place-items:center}.media-stage img,.media-stage video{width:100%;height:100%;position:absolute;inset:0;object-fit:contain;background:#e4e6e4}.media-stage video{background:#101a27}.media-stage .enter{animation:media-in .3s ease-out}.media-status{padding:22px;text-align:center;font-size:14px;max-width:100%;color:#33445a}.frame-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:13px;font-size:12px;letter-spacing:.03em}.frame-meta .memory-label{font-family:Georgia,serif;font-style:italic;font-size:17px}.kind{font-size:11px;text-transform:uppercase;letter-spacing:.12em}.caption{text-align:center;font-family:Georgia,serif;padding-top:10px;font-size:15px;line-height:1.3}.navigation{display:flex;align-items:center;justify-content:space-between;width:var(--frame-width);gap:10px}.arrow-button{border:1px solid #ffffff40;width:48px;height:48px;display:grid;place-items:center;border-radius:50%;background:transparent;color:var(--paper);transition:background .2s}.arrow-button:hover{background:#ffffff15}.counter{font-size:13px;color:#d6dee8;white-space:nowrap}.download{margin-top:17px;width:var(--frame-width);border:1px solid #ffffff35;border-radius:8px;min-height:45px;display:flex;gap:10px;align-items:center;justify-content:center;text-decoration:none;font-size:14px;background:#ffffff08}.download:hover{background:#ffffff15}.secondary-controls{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:13px}.text-button{background:none;border:0;color:#becbdb;font-size:12px;padding:7px 3px;min-height:35px;text-decoration:underline;text-underline-offset:4px}.text-button:hover{color:white}.file-fallback{font-size:12px;color:#bdc9d9;margin-top:4px}.footer{padding:16px 24px 22px;text-align:center;font-size:12px;color:#a9b7ca}.footer span{color:var(--accent)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.gallery.revealed{animation:reveal .5s ease-out}.play-hint{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;color:#fff;font-size:16px}.play-hint span{background:#172b49df;padding:13px 18px;border-radius:99px;margin-bottom:40px}
+@keyframes box-open{0%,17%{transform:rotate(0)}5%,13%{transform:rotate(-4deg)}9%,21%{transform:rotate(4deg)}30%,65%{transform:translateY(0)}100%{transform:translateY(95px);opacity:0}}
+@keyframes lid-open{0%,22%{transform:none}48%,70%{transform:translate(25px,-100px) rotate(23deg);opacity:1}100%{transform:translate(100px,-160px) rotate(38deg);opacity:0}}
+@keyframes bow-open{0%,20%{transform:none;opacity:1}45%,100%{transform:translateY(-65px) scale(1.4);opacity:0}}
+@keyframes frame-open{0%,25%{opacity:0;transform:translateY(55px) scale(.7) rotate(-8deg)}40%{opacity:1}70%{transform:translateY(-95px) scale(1.1) rotate(-5deg);opacity:1}100%{transform:translateY(-65px) scale(1.35) rotate(1deg);opacity:1}}
+@keyframes confetti{from{transform:translate(0,0) rotate(0);opacity:1}to{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:0}}
+@keyframes reveal{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes media-in{from{opacity:.3;transform:scale(.985)}to{opacity:1;transform:scale(1)}}
+@media(min-width:1400px){:root{--frame-width:min(430px,calc(58svh * .75 + 28px))}}
+@media(max-width:760px){:root{--frame-width:min(360px,calc(100vw - 44px),calc(49svh * .75 + 28px))}.site-top{padding:18px 22px}.edition{font-size:10px;letter-spacing:.12em}.gallery{grid-template-columns:1fr;gap:27px;padding:10px 22px 16px;min-height:0}.intro{text-align:center;max-width:100%}.intro .eyebrow{margin-bottom:8px;font-size:11px}.intro h2{font-size:clamp(31px,7vw,43px);line-height:1.12;max-width:520px;margin:auto}.intro h2 br{display:none}.dates{justify-content:center;margin:12px 0 13px;gap:14px;font-size:13px}.new-date{padding:6px 12px}.quote{font-size:18px;max-width:340px;margin:auto;line-height:1.35}.apology{font-size:12px;margin:10px auto 0;max-width:340px}.intro-bottom{display:none}.polaroid{margin-bottom:18px;padding:11px}.frame-meta{padding-top:10px}.frame-meta .memory-label{font-size:15px}.download{margin-top:12px}.secondary-controls{margin-top:5px}.footer{padding:9px 20px 18px}.welcome{min-height:calc(100svh - 65px)}.welcome h1{font-size:46px}.welcome-sub{font-size:15px}.gift-scene{margin-top:25px;margin-bottom:12px}.welcome-note{font-size:12px}}
+@media(max-height:600px) and (min-width:761px){.gallery{padding-top:12px;gap:35px}.intro h2{font-size:39px}.quote{font-size:20px}.dates{margin:15px 0}.intro-bottom{margin-top:20px}.site-top{padding-top:15px;padding-bottom:15px}:root{--frame-width:245px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.opening .mini-frame{opacity:1}.opening .gift-box,.opening .gift-lid,.opening .bow{opacity:0}}
+</style>
+</head>
+<body>
+<header class="site-top"><div class="brand"><span class="brand-symbol" aria-hidden="true">✳</span><span>Para <span data-name>Yonis</span>, con cariño</span></div><span class="edition">Edición cumpleaños</span></header>
+<main>
+<section id="welcome" class="welcome" aria-labelledby="welcomeTitle">
+<div class="welcome-content"><p class="eyebrow">Un poquito tarde. Con todo el cariño.</p><h1 id="welcomeTitle">Tengo algo<br><em>para ti, <span data-name>Yonis</span>.</em></h1><p class="welcome-sub">Los mejores recuerdos no caben en una caja.<br>Pero lo intenté.</p>
+<div class="gift-scene" aria-hidden="true"><span class="spark one">✧</span><span class="spark two">✧</span><span class="spark three">✦</span><div class="gift-shadow"></div><div class="mini-frame" id="miniFrame"><span>para recordar siempre</span></div><div class="gift-box"></div><div class="gift-lid"></div><div class="bow"></div></div>
+<button id="openGift" class="primary">Abrir regalo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><p class="welcome-note">Hecho de momentos que volvería a vivir contigo.</p></div>
+</section>
+<section id="gallery" class="gallery" hidden aria-labelledby="galleryTitle">
+<div class="intro"><p class="eyebrow">Hoy celebramos a <span data-name>Yonis</span></p><h2 id="galleryTitle" tabindex="-1">¡Feliz cumpleaños,<br> <span class="accent">mejor amigo!</span> <span class="emoji">🎉</span></h2><div class="dates" aria-label="Del 9 de septiembre al 10 de septiembre"><del class="old-date">SEPT 09</del><span class="date-arrow" aria-hidden="true">⟶</span><span class="new-date">SEPT 10</span></div><p id="quote" class="quote"></p><p id="apology" class="apology"></p><p class="intro-bottom">Nuestra amistad, recuerdo a recuerdo.</p></div>
+<div class="viewer"><figure class="polaroid"><div id="stage" class="media-stage"><p class="media-status">Preparando nuestros recuerdos…</p></div><figcaption><div class="frame-meta"><span class="memory-label">Qué suerte coincidir.</span><span id="kind" class="kind">Recuerdos</span></div><p id="caption" class="caption" hidden></p></figcaption></figure>
+<div class="navigation"><button id="previous" class="arrow-button" aria-label="Recuerdo anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg></button><p id="counter" class="counter" aria-live="polite" aria-atomic="true"></p><button id="next" class="arrow-button" aria-label="Recuerdo siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+<a id="download" class="download" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/></svg><span id="downloadLabel">Descargar foto</span></a>
+<div class="secondary-controls"><button id="slideshow" class="text-button" aria-pressed="false">Iniciar presentación</button><button id="reopen" class="text-button">Volver a abrir el regalo</button></div><a id="fileFallback" class="file-fallback" target="_blank" rel="noopener" hidden>Abrir archivo para guardarlo</a><p id="announcement" class="sr-only" role="status"></p></div>
+</section>
+</main><footer id="footer" class="footer" hidden>Un día tarde. <span>Una amistad para siempre.</span></footer>
+<script id="media-data" type="application/json">
+[
+  {
+    "path": "media/002F89C7-CB62-4421-8C77-D33C97DA7338.JPG",
+    "url": "media/002F89C7-CB62-4421-8C77-D33C97DA7338.JPG",
+    "type": "image"
+  },
+  {
+    "path": "media/3AC00F61-27A7-4B03-9C95-4BCA4879975C_Original.jpg",
+    "url": "media/3AC00F61-27A7-4B03-9C95-4BCA4879975C_Original.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/4CBA3927-6AC0-48A1-AA17-BBF03E73ECA32022-10-22_03-25-22_638.jpg",
+    "url": "media/4CBA3927-6AC0-48A1-AA17-BBF03E73ECA32022-10-22_03-25-22_638.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/9B470ABF-1086-4DAE-A5F3-FD5FC9BA2D90.JPG",
+    "url": "media/9B470ABF-1086-4DAE-A5F3-FD5FC9BA2D90.JPG",
+    "type": "image"
+  },
+  {
+    "path": "media/16D1DD32-0303-411A-9E59-70D758D8E16E2024-11-22_14-49-38_379 (2025-01-11T04_21_35.659).jpg",
+    "url": "media/16D1DD32-0303-411A-9E59-70D758D8E16E2024-11-22_14-49-38_379%20%282025-01-11T04_21_35.659%29.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/069f971d-1d1b-4f44-9dfa-38a2f6cdce82 2.JPG",
+    "url": "media/069f971d-1d1b-4f44-9dfa-38a2f6cdce82%202.JPG",
+    "type": "image"
+  },
+  {
+    "path": "media/069f971d-1d1b-4f44-9dfa-38a2f6cdce82.JPG",
+    "url": "media/069f971d-1d1b-4f44-9dfa-38a2f6cdce82.JPG",
+    "type": "image"
+  },
+  {
+    "path": "media/92a2d6b7-efb1-4e9c-99d1-f83fbfc30c38.JPG",
+    "url": "media/92a2d6b7-efb1-4e9c-99d1-f83fbfc30c38.JPG",
+    "type": "image"
+  },
+  {
+    "path": "media/94f5fdc8-44a3-42ad-8279-f73ee861f31a.JPG",
+    "url": "media/94f5fdc8-44a3-42ad-8279-f73ee861f31a.JPG",
+    "type": "image"
+  },
+  {
+    "path": "media/562d9b583e014e128a7d191d2a876b12.mov",
+    "url": "media/562d9b583e014e128a7d191d2a876b12.mov",
+    "type": "video"
+  },
+  {
+    "path": "media/946c9840-a726-4a80-a08e-bb6e757633b5.JPG",
+    "url": "media/946c9840-a726-4a80-a08e-bb6e757633b5.JPG",
+    "type": "image"
+  },
+  {
+    "path": "media/988af2dc-477d-4411-a641-3a4c167a7786.JPG",
+    "url": "media/988af2dc-477d-4411-a641-3a4c167a7786.JPG",
+    "type": "image"
+  },
+  {
+    "path": "media/088062b4-7cfc-4f68-ae10-2e82889d7b3f.JPG",
+    "url": "media/088062b4-7cfc-4f68-ae10-2e82889d7b3f.JPG",
+    "type": "image"
+  },
+  {
+    "path": "media/9379097d-86d8-48a0-9815-1bedcee0b7ae.JPG",
+    "url": "media/9379097d-86d8-48a0-9815-1bedcee0b7ae.JPG",
+    "type": "image"
+  },
+  {
+    "path": "media/AB7AAC31-4ED7-46E6-A6C1-5CC602F0BF91.JPG",
+    "url": "media/AB7AAC31-4ED7-46E6-A6C1-5CC602F0BF91.JPG",
+    "type": "image"
+  },
+  {
+    "path": "media/b9b5e173-14e0-4778-96d1-d703781a94bf.JPG",
+    "url": "media/b9b5e173-14e0-4778-96d1-d703781a94bf.JPG",
+    "type": "image"
+  },
+  {
+    "path": "media/C4D4BDE2-7A17-4165-8120-18B158FDCF03.MP4",
+    "url": "media/C4D4BDE2-7A17-4165-8120-18B158FDCF03.MP4",
+    "type": "video"
+  },
+  {
+    "path": "media/f90c459f-1e68-4f44-9b15-5ad92766fc66.JPG",
+    "url": "media/f90c459f-1e68-4f44-9b15-5ad92766fc66.JPG",
+    "type": "image"
+  },
+  {
+    "path": "media/FFAA12F2-F05F-4B59-B54E-19B844C153582023-03-26_12-41-45_737.jpg",
+    "url": "media/FFAA12F2-F05F-4B59-B54E-19B844C153582023-03-26_12-41-45_737.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_0079.jpg",
+    "url": "media/IMG_0079.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_0112.jpg",
+    "url": "media/IMG_0112.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_0119.jpg",
+    "url": "media/IMG_0119.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_0626.jpg",
+    "url": "media/IMG_0626.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_0680.jpg",
+    "url": "media/IMG_0680.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_0683.jpg",
+    "url": "media/IMG_0683.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_1107.jpg",
+    "url": "media/IMG_1107.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_1109.jpg",
+    "url": "media/IMG_1109.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_1697.jpg",
+    "url": "media/IMG_1697.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_1884.jpg",
+    "url": "media/IMG_1884.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_1889.jpg",
+    "url": "media/IMG_1889.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_1899.jpg",
+    "url": "media/IMG_1899.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_1909.jpg",
+    "url": "media/IMG_1909.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_1912.jpg",
+    "url": "media/IMG_1912.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_1915.jpg",
+    "url": "media/IMG_1915.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_1923.PNG",
+    "url": "media/IMG_1923.PNG",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_2060.jpg",
+    "url": "media/IMG_2060.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_2061.jpg",
+    "url": "media/IMG_2061.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_2725.jpg",
+    "url": "media/IMG_2725.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_2740.jpg",
+    "url": "media/IMG_2740.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_2750.jpg",
+    "url": "media/IMG_2750.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_2751.jpg",
+    "url": "media/IMG_2751.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_2764.jpg",
+    "url": "media/IMG_2764.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_2765.jpg",
+    "url": "media/IMG_2765.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_3006.jpg",
+    "url": "media/IMG_3006.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_3074.jpg",
+    "url": "media/IMG_3074.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_3291.jpg",
+    "url": "media/IMG_3291.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_5603.jpg",
+    "url": "media/IMG_5603.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_5902.jpg",
+    "url": "media/IMG_5902.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_5903.jpg",
+    "url": "media/IMG_5903.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_6039.jpg",
+    "url": "media/IMG_6039.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_6040.jpg",
+    "url": "media/IMG_6040.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_7020.jpg",
+    "url": "media/IMG_7020.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_9466.jpg",
+    "url": "media/IMG_9466.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_9497.jpg",
+    "url": "media/IMG_9497.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_9498.jpg",
+    "url": "media/IMG_9498.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_9501.jpg",
+    "url": "media/IMG_9501.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_9888.jpg",
+    "url": "media/IMG_9888.jpg",
+    "type": "image"
+  },
+  {
+    "path": "media/IMG_9892.jpg",
+    "url": "media/IMG_9892.jpg",
+    "type": "image"
+  }
+]
+</script>
+<script>
+'use strict';
+// PERSONALIZA AQUÍ LOS TEXTOS. La lista de archivos se genera con generar.py.
+const CONFIG = {
+ name: 'Yonis',
+ quote: 'El regalo llegó tarde, pero la amistad siempre está a tiempo',
+ apology: 'Ayer se me pasó el tiempo… hoy no podía dejarte sin regalo 😂',
+ // Opcional: usa rutas sin codificar. Ejemplo: 'media/viaje.jpg': {alt:'Juntos en la playa', caption:'Ese viaje inolvidable'}
+ details: {}
+};
+const media=JSON.parse(document.getElementById('media-data').textContent);
+const $=id=>document.getElementById(id);
+const storage={get(key){try{return localStorage.getItem('yonis-birthday:'+key)}catch{return null}},set(key,value){try{localStorage.setItem('yonis-birthday:'+key,value)}catch{}}};
+let index=Math.max(0,media.findIndex(item=>item.path===storage.get('last'))),timer=null,playing=false,opening=false,openingTimer=null,confettiTimer=null;
+const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+document.querySelectorAll('[data-name]').forEach(el=>el.textContent=CONFIG.name);
+document.title=`Para ${CONFIG.name} · Un regalo lleno de recuerdos`;
+$('quote').textContent=CONFIG.quote;$('apology').textContent=CONFIG.apology;
+function pauseVideo(){const video=$('stage').querySelector('video');if(video){video.pause();try{video.currentTime=0}catch{}}}
+function stopShow(){clearTimeout(timer);timer=null;playing=false;$('slideshow').textContent='Iniciar presentación';$('slideshow').setAttribute('aria-pressed','false')}
+function schedule(){clearTimeout(timer);if(playing)timer=setTimeout(()=>navigate(1,false),5000)}
+function render(){
+ pauseVideo();$('stage').replaceChildren();$('caption').hidden=true;$('fileFallback').hidden=true;
+ $('previous').disabled=$('next').disabled=media.length<2;$('slideshow').hidden=media.length<2;
+ if(!media.length){$('stage').innerHTML='<p class="media-status">Los recuerdos están por llegar.<br>Esta cajita ya tiene todo el cariño.</p>';$('counter').textContent='Una historia por llenar';$('download').hidden=true;$('kind').textContent='Con cariño';stopShow();return}
+ const item=media[index],detail=CONFIG.details[item.path]||{},isVideo=item.type==='video';
+ $('counter').textContent=`Recuerdo ${index+1} de ${media.length}`;$('kind').textContent=isVideo?'Video':'Foto';
+ $('caption').textContent=detail.caption||'';$('caption').hidden=!detail.caption;
+ $('download').hidden=false;$('download').href=item.url;$('download').download=item.path.split('/').pop();$('downloadLabel').textContent=isVideo?'Descargar video':'Descargar foto';$('fileFallback').href=item.url;
+ const el=document.createElement(isVideo?'video':'img');el.className='enter';
+ if(isVideo){el.controls=true;el.playsInline=true;el.preload='metadata';el.setAttribute('aria-label',detail.alt||`Video del recuerdo ${index+1}`);if(playing){stopShow();$('announcement').textContent='Presentación pausada. Puedes reproducir este video.'}}
+ else{el.alt=detail.alt||`Un momento compartido con ${CONFIG.name}. Recuerdo ${index+1}`;el.decoding='async'}
+ el.addEventListener('error',()=>{if(!el.isConnected)return;el.remove();const msg=document.createElement('p');msg.className='media-status';msg.textContent=isVideo?'Este navegador no pudo reproducir el video. Puedes descargarlo o pasar al siguiente recuerdo.':'Esta foto no pudo cargar. Probemos con el siguiente recuerdo.';$('stage').append(msg);$('fileFallback').hidden=false});
+ el.src=item.url;$('stage').append(el);storage.set('last',item.path);if(playing)schedule();
+}
+function navigate(delta,manual=true){if(opening||$('gallery').hidden||media.length<2)return;if(manual)stopShow();index=(index+delta+media.length)%media.length;render()}
+function prepareMini(){const frame=$('miniFrame');frame.replaceChildren();const item=media[index];if(item?.type==='image'){const img=new Image();img.alt='';img.src=item.url;img.onerror=()=>img.remove();frame.append(img)}else{const play=document.createElement('span');play.className='mini-video';play.textContent=item?'▷':'♡';frame.append(play)}const label=document.createElement('span');label.textContent='para recordar siempre';frame.append(label)}
+function confetti(){if(reduceMotion.matches)return;for(let n=0;n<45;n++){const piece=document.createElement('i');piece.className='confetti';piece.setAttribute('aria-hidden','true');piece.style.background=['#ff815f','#f7d87c','#fffaf0','#83b5bb'][n%4];piece.style.setProperty('--x',`${(Math.random()-.5)*Math.min(innerWidth,900)}px`);piece.style.setProperty('--y',`${(Math.random()-.35)*700}px`);piece.style.setProperty('--r',`${Math.random()*900}deg`);document.body.append(piece);piece.addEventListener('animationend',()=>piece.remove(),{once:true});setTimeout(()=>piece.remove(),2200)}}
+function reveal(focus=true){$('welcome').hidden=true;$('gallery').hidden=false;$('footer').hidden=false;$('gallery').classList.add('revealed');opening=false;storage.set('opened','yes');if(focus)$('galleryTitle').focus({preventScroll:true})}
+function openGift(){if(opening)return;opening=true;$('openGift').disabled=true;$('welcome').classList.add('opening');confettiTimer=setTimeout(confetti,reduceMotion.matches?0:950);openingTimer=setTimeout(()=>reveal(),reduceMotion.matches?180:2500)}
+$('openGift').addEventListener('click',openGift);
+$('reopen').addEventListener('click',()=>{stopShow();pauseVideo();clearTimeout(openingTimer);clearTimeout(confettiTimer);opening=false;$('gallery').hidden=true;$('footer').hidden=true;$('gallery').classList.remove('revealed');$('welcome').hidden=false;$('welcome').classList.remove('opening');$('openGift').disabled=false;prepareMini();$('openGift').focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'})});
+$('previous').addEventListener('click',()=>navigate(-1));$('next').addEventListener('click',()=>navigate(1));
+$('download').addEventListener('click',()=>{$('fileFallback').hidden=false});
+$('slideshow').addEventListener('click',()=>{if(playing){stopShow();return}if(media.length<2)return;playing=true;$('slideshow').textContent='Pausar presentación';$('slideshow').setAttribute('aria-pressed','true');if(media[index].type==='video')navigate(1,false);else schedule()});
+document.addEventListener('keydown',event=>{if(event.altKey||event.ctrlKey||event.metaKey||event.shiftKey||$('gallery').hidden||event.target.closest('video,input,textarea,select,[contenteditable="true"]'))return;if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();navigate(event.key==='ArrowRight'?1:-1)}});
+let touch=null;
+$('stage').addEventListener('touchstart',event=>{touch=null;if(event.touches.length!==1||event.target.closest('video'))return;touch={x:event.touches[0].clientX,y:event.touches[0].clientY}},{passive:true});
+$('stage').addEventListener('touchend',event=>{if(!touch)return;const start=touch;touch=null;const end=event.changedTouches[0],dx=end.clientX-start.x,dy=end.clientY-start.y;if(Math.abs(dx)>55&&Math.abs(dx)>Math.abs(dy)*1.6)navigate(dx<0?1:-1)},{passive:true});
+$('stage').addEventListener('touchcancel',()=>touch=null,{passive:true});
+document.addEventListener('visibilitychange',()=>{if(document.hidden){stopShow();$('stage').querySelector('video')?.pause()}});
+render();if(storage.get('opened')==='yes')reveal(false);else prepareMini();
+</script>
+</body></html>

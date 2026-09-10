@@ -1,0 +1,52 @@
+name: Publicar el regalo
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  preparar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener archivos
+        uses: actions/checkout@v6
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+      - name: Generar galería y preparar carpeta pública
+        run: |
+          python3 generar.py
+          python3 - <<'PY'
+          import json, pathlib, shutil
+          root = pathlib.Path('.')
+          out = root / '_site'
+          out.mkdir(exist_ok=True)
+          shutil.copy2('index.html', out / 'index.html')
+          html = pathlib.Path('index.html').read_text(encoding='utf-8')
+          data = json.loads(html.split('<script id="media-data" type="application/json">', 1)[1].split('</script>', 1)[0])
+          for item in data:
+              source = pathlib.Path(item['path'])
+              target = out / source
+              target.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(source, target)
+          PY
+      - name: Preparar publicación
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  publicar:
+    needs: preparar
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
